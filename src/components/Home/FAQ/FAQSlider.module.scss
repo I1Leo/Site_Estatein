@@ -1,0 +1,30 @@
+@import "../../../variables";
+
+.title_container {
+    min-height: 102px;
+
+    @media (max-width: 1505px) {
+        min-height: 60px;
+    }
+}
+
+.title {
+    font-size: 1.333rem;
+    font-weight: 600;
+    line-height: 150%;
+
+
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: -0.6%;
+    padding: 30px 0;
+    flex-grow: 1;
+
+    @media (max-width: 1505px) {
+        padding: 24px 0;
+    }
+}

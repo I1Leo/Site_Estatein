@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.list {
+    padding: 23px 19px;
+    border: 1px solid $grey;
+    border-radius: 0 0 8px 8px;
+    background-color: $semi-grey;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+}
+
+.item {
+    font-size: 1rem;
+    color: $white;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px;
+
+    @media (max-width: 1505px) {
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: 1296px) {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        background-color: $grey;
+    }
+}

@@ -1,0 +1,33 @@
+<svg width="82.000000" height="82.000000" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip122_2121">
+			<rect id="Icon" width="34.000000" height="34.000000" transform="translate(23.500000 23.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_104_11861_0" x1="6.250008" y1="85.999977" x2="85.250023" y2="-5.999985" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11861_1" x1="81.250000" y1="-11.000015" x2="6.250031" y2="81.500008" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11862_0" x1="2.750000" y1="13.000000" x2="71.250000" y2="71.500000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11862_1" x1="83.750000" y1="85.500015" x2="11.749989" y2="34.500031" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip122_2121)">
+		<path id="Union" d="M40.5 26.68C41.08 26.68 41.56 27.16 41.56 27.75L41.56 30.93C41.56 31.52 41.08 32 40.5 32C39.91 32 39.43 31.52 39.43 30.93L39.43 27.75C39.43 27.16 39.91 26.68 40.5 26.68ZM34.48 34.48C34.07 34.9 33.4 34.9 32.98 34.48L30.73 32.23C30.52 32.02 30.42 31.75 30.42 31.48C30.42 31.21 30.52 30.94 30.73 30.73C31.14 30.31 31.82 30.31 32.23 30.73L34.48 32.98C34.69 33.19 34.8 33.46 34.8 33.73C34.8 34.01 34.69 34.28 34.48 34.48ZM50.57 31.48C50.57 31.75 50.47 32.02 50.26 32.23L48.01 34.48C47.59 34.9 46.92 34.9 46.51 34.48C46.3 34.28 46.19 34.01 46.19 33.73C46.19 33.46 46.3 33.19 46.51 32.98L48.76 30.73C49.17 30.31 49.85 30.31 50.26 30.73C50.47 30.94 50.57 31.21 50.57 31.48ZM34.12 40.5C34.12 36.97 36.98 34.12 40.5 34.12C44.01 34.12 46.87 36.97 46.87 40.5C46.87 44.02 44.01 46.87 40.5 46.87C36.98 46.87 34.12 44.02 34.12 40.5ZM32 40.5C32 41.08 31.52 41.56 30.93 41.56L27.75 41.56C27.16 41.56 26.68 41.08 26.68 40.5C26.68 39.91 27.16 39.43 27.75 39.43L30.93 39.43C31.52 39.43 32 39.91 32 40.5ZM54.31 40.5C54.31 41.08 53.83 41.56 53.25 41.56L50.06 41.56C49.47 41.56 49 41.08 49 40.5C49 39.91 49.47 39.43 50.06 39.43L53.25 39.43C53.83 39.43 54.31 39.91 54.31 40.5ZM50.26 50.26C49.85 50.68 49.17 50.68 48.76 50.26L46.51 48.01C46.3 47.8 46.19 47.53 46.19 47.26C46.19 46.98 46.3 46.71 46.51 46.51C46.92 46.09 47.59 46.09 48.01 46.51L50.26 48.76C50.47 48.97 50.57 49.24 50.57 49.51C50.57 49.78 50.47 50.05 50.26 50.26ZM34.8 47.26C34.8 47.53 34.69 47.8 34.48 48.01L32.23 50.26C31.82 50.68 31.14 50.68 30.73 50.26C30.52 50.05 30.42 49.78 30.42 49.51C30.42 49.24 30.52 48.97 30.73 48.76L32.98 46.51C33.4 46.09 34.07 46.09 34.48 46.51C34.69 46.71 34.8 46.98 34.8 47.26ZM40.5 49C41.08 49 41.56 49.47 41.56 50.06L41.56 53.25C41.56 53.83 41.08 54.31 40.5 54.31C39.91 54.31 39.43 53.83 39.43 53.25L39.43 50.06C39.43 49.47 39.91 49 40.5 49Z" fill="#A685FA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.000000 10.000000)" stroke="url(#paint_linear_104_11862_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.000000 10.000000)" stroke="url(#paint_linear_104_11862_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" stroke="url(#paint_linear_104_11861_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" stroke="url(#paint_linear_104_11861_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>

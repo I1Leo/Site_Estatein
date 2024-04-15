@@ -1,0 +1,41 @@
+@import "../../../variables";
+
+
+.container {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   padding-bottom: 20px;
+}
+
+.icon_container {
+   padding: 19px;
+   border: 1px solid $purple;
+   border-radius: 50%;
+
+   @media (max-width: 1505px) {
+      padding: 16px;
+   }
+
+   img {
+      display: block;
+      width: 34px;
+      height: 34px;
+
+      @media (max-width: 1505px) {
+         width: 28px;
+         height: 28px;
+      }
+   }
+}
+
+.title {
+   font-size: 1.333rem;
+   font-weight: 600;
+   line-height: 150%;
+}
+
+.text {
+   color: $light-grey;
+   line-height: 150%;
+}

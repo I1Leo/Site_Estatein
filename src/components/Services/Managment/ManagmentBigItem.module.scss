@@ -1,0 +1,58 @@
+@import "../../../variables";
+
+.big_item {
+    padding: 49px;
+    border: 1px solid $grey;
+    border-radius: 12px;
+    background-color: $semi-grey;
+    grid-column: span 2;
+
+    @media (max-width: 1505px) {
+        padding: 39px;
+    }
+
+    @media (max-width: 960px) {
+        padding: 23px;
+    }
+
+}
+
+.big_item_header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    @media (max-width: 1505px) {
+        padding-bottom: 19px;
+    }
+
+    @media (max-width: 960px) {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    @media (max-width: 679px) {
+        align-items: stretch;
+    }
+}
+
+.title {
+    font-size: 1.667rem;
+    font-weight: 700;
+    line-height: 150%;
+
+    @media (max-width: 1505px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 960px) {
+        font-size: 1.4286rem;
+    }
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 150%;
+    color: $light-grey
+}

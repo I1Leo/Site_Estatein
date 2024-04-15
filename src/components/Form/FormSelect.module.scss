@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.select {
+    padding: 0 19px;
+    background-color: $semi-grey;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    color: $light-grey;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 20px;
+
+    position: relative;
+}
+
+.select_header {
+    padding: 23px 0;
+    display: flex;
+
+    @media (max-width: 1505px) {
+        padding: 15px 0;
+    }
+
+
+    input {
+        font-size: 1rem;
+        background-color: inherit;
+        color: $white;
+        line-height: 20px;
+        flex: 1 1 auto;
+
+
+        @media (max-width: 1505px) {
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 1285px) {
+            font-size: 1rem;
+        }
+
+
+        &::placeholder {
+            color: $light-grey
+        }
+    }
+}
+
+.select_btn {
+    flex-shrink: 0;
+
+    img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        transition: transform 0.35s ease;
+
+        @media (max-width: 1505px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

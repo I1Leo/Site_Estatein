@@ -1,0 +1,43 @@
+@import "../../../variables";
+
+.container {
+    width: 100%;
+    background: linear-gradient(to left, $dark-grey 60%, $semi-grey );
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 150px 20px 160px 20px;
+
+    @media (max-width: 1505px) {
+        padding: 100px 14px 130px 14px;
+    }
+
+    @media (max-width: 630px) {
+        padding: 50px 14px 50px 14px;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+.wrapper {
+    max-width: 1556px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1505px) {
+        max-width: 1296px;
+    }
+}
+
+.title {
+    font-size: 2.667rem;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 0.292em;
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+}

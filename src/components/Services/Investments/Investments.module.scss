@@ -1,0 +1,17 @@
+@import "../../../variables";
+
+.container {
+    display: flex;
+    gap: 60px;
+
+    @media (max-width: 960px) {
+        flex-direction: column;
+        gap: 40px
+    }
+    
+}
+
+.body {
+    flex: 0 1 412px;
+    
+}

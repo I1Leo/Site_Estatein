@@ -1,0 +1,42 @@
+@import "../../../variables";
+
+.stars_container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1505px) {
+        padding-bottom: 30px;
+    }
+}
+
+.title {
+    font-size: 1.33rem;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 0.5833em;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 150%;
+    padding-bottom: 2.222em;
+    flex-grow: 1;
+}
+
+.reviewer_container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.111rem;
+    line-height: 150%;
+}
+
+.location {
+    font-size: 1rem;
+    line-height: 150%;
+    color: $light-grey
+}

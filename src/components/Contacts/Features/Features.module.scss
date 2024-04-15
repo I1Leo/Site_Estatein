@@ -1,0 +1,30 @@
+@import "../../../variables";
+
+.section {
+   background-color: $semi-grey;
+   width: 100%;
+   padding: 10px 0;
+   margin-bottom: 140px;
+}
+
+.wrapper {
+   background-color: $dark-grey;
+}
+
+.list {
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 20px;
+   display: flex;
+   gap: 20px;
+
+   @media (max-width: 1505px) {
+      padding: 10px;
+   }
+
+   @media (max-width: 1285px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 10px;
+   }
+}

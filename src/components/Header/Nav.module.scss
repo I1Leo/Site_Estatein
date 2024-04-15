@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.nav {
+   flex: 1 1 864px;
+   background-color: $semi-grey;
+   z-index: 2;
+
+   @media (max-width: 960px) {
+      position: absolute;
+      width: 100%;
+      right: 0;
+      top: 68px;
+      padding-bottom: 20px;
+   }
+}
+
+.list {
+   display: flex;
+   gap: 6px;
+
+   @media (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+   }
+}

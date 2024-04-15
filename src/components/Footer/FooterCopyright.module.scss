@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.container {
+    padding: 20px;
+    background-color: $semi-grey;
+
+    @media (max-width: 1505px) {
+        padding: 12px 14px;
+    }
+
+}
+
+.wrapper {
+    max-width: 1556px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1505px) {
+       max-width: 1279px;
+    }
+
+
+    @media (max-width: 679px) {
+       flex-direction: column;
+       gap: 20px;
+     }
+}   
+
+.text_container {
+    
+    @media (max-width: 679px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        order: 2;
+    }
+
+}

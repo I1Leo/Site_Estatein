@@ -1,0 +1,142 @@
+@import "../../../variables";
+
+.container {
+    width: 100%;
+    background: linear-gradient(to left, $dark-grey 60%, $semi-grey );
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 150px 20px 160px 20px;
+
+    @media (max-width: 1505px) {
+        padding: 100px 14px 130px 14px;
+    }
+
+    @media (max-width: 630px) {
+        padding: 50px 14px 50px 14px;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+.wrapper {
+    max-width: 1556px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1505px) {
+        max-width: 1296px;
+    }
+}
+
+.title {
+    font-size: 2.667rem;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 0.292em;
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.form {
+    margin-top: -61.5px;
+
+    @media (max-width: 630px) {
+        margin-top: 0;
+    }
+}
+
+.form_wrapper {
+    max-width: 1636px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 1505px) {
+        max-width: 1296px;
+        padding: 0 14px;
+    }
+}
+
+.search_container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 19px 19px 19px 23px;
+    border: 1px solid $grey;
+    border-radius: 12px 12px 0 0;
+    background-color: $dark-grey;
+    box-shadow: 0px 0px 0px 10px $semi-grey;
+
+    @media (max-width: 1505px) {
+        max-width: 1100px;
+        padding: 15px 15px 15px 19px;
+     }
+
+     @media (max-width: 1210px) {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    @media (max-width: 630px) {
+        border-radius: 12px;
+        box-shadow: 0px 0px 0px 4px $semi-grey;
+        margin-bottom: 20px;
+    }
+
+    input {
+        flex-grow: 1;
+        color: inherit;
+        font-size: 1.333rem;
+        font-weight: 500;
+        line-height: 150%;
+        background-color: inherit;
+
+        &::placeholder {
+            font-size: 1.33rem;
+            font-weight: 500;
+            line-height: 150%;
+            color: $light-grey;
+
+            @media (max-width: 1505px) {
+                font-size: 1.25rem;
+             }
+        }
+
+        @media (max-width: 1505px) {
+           font-size: 1.25rem;
+        }
+
+    }
+
+}
+
+.search_list {
+    margin-top: 10px;
+    background-color: $semi-grey;
+    padding: 10px;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px,299.2px));
+    gap: 20px;
+
+    @media (max-width: 1210px) {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    @media (max-width: 630px) {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}

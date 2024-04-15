@@ -1,0 +1,35 @@
+@import "../../variables";
+
+.btn {
+   padding: 14px;
+   border-radius: 50px;
+   background-color: $semi-grey;
+   border: 1px solid $grey;
+
+   @media (max-width: 1505px) {
+      padding: 10px;
+   }
+
+   img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      transform: rotateY(180deg);
+
+      @media (max-width: 1505px) {
+         width: 24px;
+         height: 24px;
+      }
+   }
+
+   
+}
+
+.disabled {
+
+   background-color: $dark-grey;
+
+   img {
+      opacity: 0.5;
+   }
+}

@@ -1,0 +1,37 @@
+@import "../../../variables";
+
+
+.container {
+   display: flex;
+   gap: 4px;
+   padding: 8px 14px;
+   border: 1px solid $grey;
+   border-radius: 28px;
+
+   @media (max-width: 1505px) {
+      gap: 3px;
+      padding: 6px 14px;
+   }
+}
+
+.img_container {
+
+   img {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      @media (max-width: 1505px) {
+         width: 20px;
+         height: 20px;
+      }
+   }
+}
+
+.text {
+   font-size: 1rem;
+
+   @media (max-width: 1505px) {
+      font-size: 0.875rem;
+   }
+}

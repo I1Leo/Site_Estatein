@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.container {
+    padding: 8.33px;
+    border: 1px solid $grey;
+    border-radius: 50%;
+    background-color: $semi-grey;
+
+    @media (max-width: 1505px) {
+        padding: 7px;
+    }
+
+    img {
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        @media (max-width: 1505px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.dark {
+    background-color: $dark-grey;
+
+    @media (max-width: 679px) {
+        padding: 20px;
+    }
+
+}

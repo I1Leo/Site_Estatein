@@ -1,0 +1,54 @@
+@import "../../../variables";
+
+.container {
+   background-color: $semi-grey;
+   border: 1px solid $grey;
+   border-radius: 0.67rem;
+   padding: 16px 24px;
+   flex: 0 1 239.33px;
+
+   @media (max-width: 1505px) {
+      padding: 14px 20px;
+      
+   }
+
+   @media (max-width: 1440px) {
+      flex-basis: 192.67px;
+   }
+
+   @media (max-width: 1285px) {
+      padding: 16px;
+      
+   }
+}
+
+
+.title {
+   font-size: 2.222rem;
+   font-weight: 700;
+   line-height: 150%;
+   padding-bottom: 2px;
+
+   @media (max-width: 1505px) {
+      font-size: 1.875rem;
+   }
+
+   @media (max-width: 1285px) {
+      font-size: 1.714rem;
+      text-align: center;
+   }
+}
+
+.text {
+   color: $light-grey;
+   font-size: 1rem;
+   line-height: 150%;
+
+   @media (max-width: 1285px) {
+      text-align: center;
+   }
+}
+
+.big {
+   grid-column: span 2;
+}

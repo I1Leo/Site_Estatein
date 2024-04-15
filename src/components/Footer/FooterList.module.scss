@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.container {
+    display: flex;
+    gap: 100.25px;
+    flex: 1 1 auto;
+    justify-content: end;
+
+    @media (max-width: 1505px) {
+        gap: 90.5px;
+    }
+
+    @media (max-width: 1505px) {
+        gap: 90.5px;
+    }
+
+    @media (max-width: 1200px) {
+        gap: 65px;
+    }
+
+    @media (max-width: 1065px) {
+        justify-content: center; 
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 679px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto,160px));
+        grid-template-rows: repeat(4, 136px);
+        gap: 0;
+    }
+}

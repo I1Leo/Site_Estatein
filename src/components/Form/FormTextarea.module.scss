@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.textarea {
+    padding: 23px 19px;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    background-color: $semi-grey;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    @media (max-width: 1505px) {
+        padding: 15px 19px;
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: 1285px) {
+        font-size: 1rem;
+    }
+
+    &::placeholder {
+        color: $light-grey
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

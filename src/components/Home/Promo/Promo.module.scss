@@ -1,0 +1,161 @@
+@import "../../../variables";
+
+.section {
+   background-color: $dark-grey;
+
+   @media (max-width: 960px) {
+      padding: 0 14px;
+   }
+
+}
+
+.container {
+   max-width: 1920px;
+   margin: 0 auto;
+   width: 100%;
+
+   @media (max-width: 1505px) {
+      max-width: 1440px;
+   }
+}
+
+.wrapper {
+   display: flex;
+   justify-content: end;
+   margin-left: auto;
+   padding-left: 20px;
+
+   @media (max-width: 1505px) {
+      padding-left: 14px;
+   }
+
+   @media (max-width: 960px) {
+      flex-direction: column;
+      padding-left: 0;
+   }
+}
+
+.body {
+   padding: 144px 20px 144px 0;
+   flex-basis: 785px;
+   padding-right: 20px;
+   flex-basis: 838px;
+
+   @media (max-width: 1505px) {
+      flex-basis: 675px;
+      padding: 98px 20px 98px 0;
+   }
+
+   @media (max-width: 1285px) {
+      padding: 52px 10px 52px 0;
+   }
+
+   @media (max-width: 960px) {
+      order: 2;
+      padding-right: 0;
+   }
+}
+
+.title {
+   max-width: 758px;
+   font-size: 3.3333rem;
+   font-weight: 600;
+   line-height: 120%;
+   padding-bottom: 0.416em;
+
+   @media (max-width: 1505px) {
+      font-size: 2.875rem;
+      max-width: 610px;
+   }
+
+
+   @media (max-width: 1285px) {
+      max-width: 500px;
+   }
+
+   @media (max-width: 960px) {
+      max-width: 100%;
+   }
+}
+
+.text {
+   max-width: 758px;
+   font-size: 1rem;
+   color: $light-grey;
+   padding-bottom: 3.333em;
+
+   @media (max-width: 1505px) {
+      padding-bottom: 3.125rem;
+      max-width: 610px;
+   }
+
+   @media (max-width: 1285px) {
+      max-width: 500px;
+   }
+
+   @media (max-width: 960px) {
+      max-width: 100%;
+   }
+}
+
+.btns {
+   display: flex;
+   gap: 20px;
+   padding-bottom: 3.333rem;
+
+   @media (max-width: 960px) {
+      flex-direction: column;
+   }
+}
+
+.list {
+   display: flex;
+   gap: 20px;
+
+   @media (max-width: 1505px) {
+      gap: 10px;
+   }
+
+   @media (max-width: 1285px) {
+      display: grid;
+      grid-template-columns: repeat(2, 173px);
+   }
+
+   @media (max-width: 960px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+.img_container {
+   background-color: $semi-grey;
+   background-image: url("../../../../public/img/Home/Promo/promo-building.png");
+   background-position: center top;
+   background-size: cover;
+   background-repeat: no-repeat;
+   flex-basis: 920px;
+   display: flex;
+   position: relative;
+
+   @media (max-width: 1505px) {
+      flex-basis: 690px;
+   }
+
+   @media (max-width: 1285px) {
+      flex-basis: 600px;
+   }
+
+   @media (max-width: 960px) {
+      order: 1;
+      border: 1px solid $grey;
+      border-radius: 12px;
+      margin-top: 40px;
+      align-self: end;
+      width: 500px;
+   }
+
+   @media (max-width: 600px) {
+      width: 100%;
+   }
+
+}

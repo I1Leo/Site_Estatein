@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.btn {
+   font-size: 1rem;
+   padding: 1em 1.33em;
+   background-color: $purple;
+   border-radius: 0.56rem;
+   flex-shrink: 1;
+
+   @media (max-width: 1505px) {
+      font-size: 0.875rem;
+   }
+
+   @media (max-width: 1285px) {
+      font-size: 1rem;
+   }
+
+}

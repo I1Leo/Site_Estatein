@@ -1,0 +1,48 @@
+@import "../../../variables";
+
+
+.navigation {
+   display: flex;
+}
+
+.navigation_list {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(105.67px, 158.67px));
+   gap: 10px;
+   padding: 10px;
+   background-color: $semi-grey;
+   border-radius: 12px;
+
+   @media (max-width: 389px) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+   }
+}
+
+.item {
+   display: flex;
+   
+   button {
+      width: 100%;
+      flex-shrink: 1;
+   }
+}
+
+.list {
+   padding-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(630px, 783px));
+   gap: 30px;
+
+   @media (max-width: 1505px) {
+      grid-template-columns: repeat(2, minmax(auto, 630px));
+      padding-top: 40px;
+   }
+
+   @media (max-width: 960px) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+   }
+}

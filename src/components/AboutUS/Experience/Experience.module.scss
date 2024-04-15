@@ -1,0 +1,29 @@
+@import "../../../variables";
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 512.33px);
+    grid-template-rows: repeat(2, 329px);
+    column-gap: 30px;
+    row-gap: 50px;
+
+    @media (max-width: 1505px) {
+        grid-template-columns: repeat(3,minmax(auto, 413px));
+        grid-template-rows: repeat(2, 274px);
+        column-gap: 20px;
+        row-gap: 40px
+    }
+
+    @media (max-width: 1285px) {
+        grid-template-rows: repeat(2, 240px);
+        column-gap: 15px;
+        row-gap: 35px;
+    }
+
+    @media (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,38 @@
+@import "../../../variables";
+
+.item {
+    border: 1px solid #222222;
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 8px #191919 ;
+    padding: 49px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 505.67px;
+
+    @media(max-width: 960px) {
+        flex-basis: 169px;
+        padding: 29px;
+    }
+}
+
+.title {
+    font-size: 1.667rem;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 1em;
+    flex-grow: 1;
+
+    @media(max-width: 960px) {
+        font-size: 1.43rem;
+        padding-bottom: 1.142em;
+        flex-grow: 0;
+
+    }
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+}

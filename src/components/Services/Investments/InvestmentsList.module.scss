@@ -1,0 +1,68 @@
+@import "../../../variables";
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 512px));
+    gap: 10px;
+    background-color: $semi-grey;
+    padding: 10px;
+    border-radius: 12px;
+
+    @media (max-width: 1505px) {
+        grid-template-columns: repeat(2, minmax(auto, 394px));
+    }
+
+    @media (max-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 679px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.item {
+    padding: 49px;
+    background-color: $dark-grey;
+    border: 1px solid $grey;
+    border-radius: 12px;
+
+    @media (max-width: 1505px) {
+        padding: 39px;
+    }
+}
+
+.item_header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+
+    img {
+        display: block;
+        width: 82px;
+        height: 82px;
+
+        @media (max-width: 1505px) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+.title {
+    font-size: 1.333rem;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (max-width: 1505px) {
+        font-size: 1.25rem;
+    }
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+}

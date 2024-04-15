@@ -1,0 +1,39 @@
+@import "../../../variables";
+
+.big_item {
+    padding: 49px;
+    border: 1px solid $grey;
+    border-radius: 12px;
+    background-color: $semi-grey;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-row-start: 2;
+
+    @media (max-width: 1505px) {
+        padding: 39px;
+    }
+
+    @media (max-width: 960px) {
+        align-items: start;
+    }
+
+    @media (max-width: 678px) {
+        align-items: stretch;
+    }
+}
+
+.title {
+    font-size: 1.333rem;
+    font-weight: 700;
+    line-height: 150%;
+
+    @media (max-width: 1505px) {
+        font-size: 1.375rem;
+    }
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 150%;
+}

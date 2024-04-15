@@ -1,0 +1,58 @@
+@import "../../../variables";
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item_header {
+    padding:  0.8em 1em;
+    border-left: 1px solid $purple;
+    
+    p {
+        font-size: 1.111rem;
+        line-height: 150%;
+    }
+
+}
+
+.item_body {
+    padding: 49px;
+    border: 1px solid $grey;
+    border-radius: 0px 12px 12px 12px;
+    background: linear-gradient(156.17deg, $purple -49.397%, $dark-grey 13.589%);
+    position: relative;
+    flex-grow: 1;
+
+    @media (max-width: 1505px) {
+        padding: 39px;
+    }
+
+    @media (max-width: 1307px) {
+        padding: 24px;
+    }
+
+}
+
+
+.title {
+    font-size: 1.444rem;
+    font-weight: 600;
+    line-height: 150%;
+
+    padding-bottom: 0.769em;
+
+    @media (max-width: 1505px) {
+        font-size: 1.25rem;
+        padding-bottom: 0.8em;
+    }
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: left ;
+}

@@ -1,0 +1,101 @@
+@import "../../../variables";
+
+
+.item {
+    padding: 29px;
+    border: 1px solid $grey;
+    border-radius: 12px;
+    flex: 0 1 376.75px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1505px) {
+        flex-basis: 305px;
+    }
+
+    @media (max-width: 960px) {
+        flex-basis: 100%;
+    }
+}
+
+.img_container {
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.social_container {
+    display: flex;
+    justify-content: center;
+    margin-top: -26px;
+    padding-bottom: 24px;
+
+    button {
+        padding: 14px 26px;
+        background-color: $purple;
+        border-radius: 43px;
+
+        img {
+            display: block;
+        }
+    }
+}
+
+.title {
+    font-size: 1.333rem;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+
+.text {
+    color: $light-grey;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 1.333em;
+    flex-grow: 1;
+}
+
+.form {
+    padding: 14px 14px 14px 24px;
+    background-color: $semi-grey;
+    border: 1px solid $grey;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1505px) {
+        padding: 10px 10px 10px 20px;;
+    }
+
+    input {
+        color: inherit;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 28px;
+        flex: 0 1 214.75px;
+        width: 100%;
+        background-color: inherit;
+
+        @media (max-width: 1505px) {
+            flex-basis: 171px;
+        }
+    }
+
+    button {
+        padding: 10px;
+        background-color: $purple;
+        border-radius: 50%;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

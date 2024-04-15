@@ -1,0 +1,106 @@
+@import "../../../variables";
+
+.form {
+    padding: 99px;
+    background-color: inherit;
+    border: 1px solid $grey;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 311.75px));
+    gap: 50px;
+
+    @media (max-width: 1505px) {
+        padding: 49px;
+        gap: 30px;
+    }
+
+    @media (max-width: 1093px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 630px) {
+        display: flex;
+        flex-direction: column;
+        padding: 19px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.big {
+    grid-column: span 2;
+}
+
+.textarea {
+    grid-row-start: 4;
+    grid-column: span 4;
+
+    @media (max-width: 1093px) {
+        grid-row-start: 6;
+        grid-column: span 2;
+    }
+}
+
+
+.form_footer {
+    grid-row-start: 5;
+    grid-column: span 4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1093px) {
+        grid-row-start: 7;
+        grid-column: span 2;
+    }
+
+    @media (max-width: 630px) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+}
+
+.agreement {
+    position: relative;
+
+    label {
+        color: $light-grey
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.agreement_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+
+    &+label::before {
+        content: "";
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $semi-grey;
+        border: 1px solid $grey;
+        border-radius: 4px;
+        vertical-align: middle;
+
+        margin-right: 10px;
+    }
+
+    &:checked+label::before {
+        background-image: url("../../../../public/img/generic/checked-icon.svg");
+        background-position: center;
+        object-fit: cover;
+    }
+}

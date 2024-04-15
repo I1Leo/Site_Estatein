@@ -1,0 +1,89 @@
+@import "../../../variables";
+
+.container {
+   position: absolute;
+   top: 130px;
+   left: -87.5px;
+
+   @media (max-width: 1505px) {
+      top: 90px;
+      left: -64.5px;
+   }
+
+   @media (max-width: 1285px) {
+      top: 30px;
+   }
+
+   @media (max-width: 960px) {
+      top: 85%;
+   }
+
+   @media (max-width: 600px) {
+      left: 0;
+   }
+}
+
+.btn {
+   border: 1px solid $grey;
+   border-radius: 50%;
+   background-color: $dark-grey;
+   position: relative;
+   width: 175px;
+   height: 175px;
+   animation: rotate 15s linear infinite;
+
+   @media (max-width: 1505px) {
+      width: 129px;
+      height: 129px;
+   }
+}
+
+.text_container {
+   animation: rotateText 15s linear infinite;
+
+
+}
+
+.text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   @media (max-width: 1505px) {
+      width: 106px;
+      height: 106px;
+   }
+
+}
+
+@keyframes rotateText {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+
+.icon_container {
+   background-image: url("../../../../public/img/Home/Promo/Icon.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 80px;
+   height: 80px;
+   background-color: $semi-grey;
+   border: 1px solid $grey;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   @media (max-width: 1505px) {
+      width: 58.64px;
+      height: 58.64px;
+   }
+}
