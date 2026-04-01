@@ -1,6 +1,6 @@
-import s from "./Slider.module.scss"
-import SliderFooter from "./SliderFooter"
-import { ReactNode } from 'react';
+import s from "./slider.module.scss"
+import SliderFooter from "./slider-footer/slider-footer"
+import type { ReactNode } from 'react';
 
 type sliderProps = {
    length: number
