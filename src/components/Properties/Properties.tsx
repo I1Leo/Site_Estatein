@@ -1,8 +1,8 @@
 
 import { PropertiesData } from "../../data/PropertiresData";
-import SectionHeader from "../generic/SectionHeader";
+import SectionHeader from "../generic/section-header/section-header";
 import PropertiesSlider from "./properties-slider/properties-slider";
-import Section from "../generic/Section";
+import Section from "../generic/section/section";
 
 export default function Properties() {
 

@@ -1,6 +1,6 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
-import s from "./Explore.module.scss"
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import s from "./explore.module.scss"
 
 
 export default function Explore() {
@@ -16,22 +16,22 @@ export default function Explore() {
                   <SectionHeader title="Explore Estatein's World" text={text} />
                </div>
                <div className={`${s.item} ${s.item_1}`}>
-                  <img src="./img/Contacts/Explore/img1.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img1.jpeg" alt="" />
                </div>
                <div className={`${s.item} ${s.item_2}`}>
-                  <img src="./img/Contacts/Explore/img2.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img2.jpeg" alt="" />
                </div>
                <div className={`${s.item} ${s.item_3}`}>
-                  <img src="./img/Contacts/Explore/img3.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img3.jpeg" alt="" />
                </div>
                <div className={`${s.item} ${s.item_4}`}>
-                  <img src="./img/Contacts/Explore/img4_small.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img4_small.jpeg" alt="" />
                </div>
                <div className={`${s.item} ${s.item_5}`}>
-                  <img src="./img/Contacts/Explore/img5_small.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img5_small.jpeg" alt="" />
                </div>
                <div className={`${s.item} ${s.item_6}`}>
-                  <img src="./img/Contacts/Explore/img6.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img6.jpeg" alt="" />
                </div>
             </div>
          }
@@ -40,26 +40,26 @@ export default function Explore() {
             <div className={s.container}>
                <div className={s.header}>
                   <div className={`${s.item} ${s.item_1}`}>
-                     <img src="./img/Contacts/Explore/img1.jpeg" alt="" />
+                     <img src="../img/Contacts/Explore/img1.jpeg" alt="" />
                   </div>
                   <div className={`${s.item} ${s.item_2}`}>
-                     <img src="./img/Contacts/Explore/img2.jpeg" alt="" />
+                     <img src="../img/Contacts/Explore/img2.jpeg" alt="" />
                   </div>
                   <div className={`${s.item} ${s.item_3}`}>
-                     <img src="./img/Contacts/Explore/img3.jpeg" alt="" />
+                     <img src="../img/Contacts/Explore/img3.jpeg" alt="" />
                   </div>
                   <div className={`${s.item} ${s.item_4}`}>
-                     <img src="./img/Contacts/Explore/img4_small.jpeg" alt="" />
+                     <img src="../img/Contacts/Explore/img4_small.jpeg" alt="" />
                   </div>
                   <div className={`${s.item} ${s.item_5}`}>
-                     <img src="./img/Contacts/Explore/img5_small.jpeg" alt="" />
+                     <img src="../img/Contacts/Explore/img5_small.jpeg" alt="" />
                   </div>
                </div>
                <div className={`${s.item} ${s.item_text}`}>
                   <SectionHeader title="Explore Estatein's World" text={text} />
                </div>
                <div className={`${s.item} ${s.item_6}`}>
-                  <img src="./img/Contacts/Explore/img6.jpeg" alt="" />
+                  <img src="../img/Contacts/Explore/img6.jpeg" alt="" />
                </div>
             </div>
          }

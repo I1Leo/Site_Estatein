@@ -1,5 +1,5 @@
-import DarkBtn from "../generic/DarkBtn";
-import PurpleBtn from "../generic/PurpleBtn";
+import DarkBtn from "../generic/dark-btn/dark-btn";
+import PurpleBtn from "../generic/purple-btn/purple-btn";
 import HomeHeroBtn from "./home-hero-btn/home-hero-btn";
 import HomeHeroItem from "./home-hero-item/home-hero-item";
 import s from "./home-hero.module.scss"

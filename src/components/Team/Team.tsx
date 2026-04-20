@@ -1,8 +1,8 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
-import { TeamDataType } from "../../data/TeamData";
-import TeamItem from "./TeamItem";
-import s from "./Team.module.scss"
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import type { TeamDataType } from "../../data/TeamData";
+import TeamItem from "./team-item/team-item";
+import s from "./team.module.scss"
 
 type TeamType = {
     data: TeamDataType[]

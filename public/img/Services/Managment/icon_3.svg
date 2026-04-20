@@ -1,0 +1,33 @@
+<svg width="82.000000" height="82.000000" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip104_11619">
+			<rect id="Icon" width="34.000000" height="34.000000" transform="translate(24.000000 24.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_104_11617_0" x1="6.750008" y1="86.499977" x2="85.750023" y2="-5.499985" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11617_1" x1="81.750000" y1="-10.500015" x2="6.750031" y2="82.000008" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11618_0" x1="3.250000" y1="13.500000" x2="71.750000" y2="72.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_11618_1" x1="84.250000" y1="86.000015" x2="12.249989" y2="35.000031" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip104_11619)">
+		<path id="Vector" d="M49.5 26.12C49.98 26.12 50.41 26.45 50.53 26.92L50.89 28.39C51.23 29.72 52.26 30.76 53.6 31.1L55.07 31.46C55.54 31.58 55.87 32.01 55.87 32.5C55.87 32.98 55.54 33.41 55.07 33.53L53.6 33.89C52.26 34.23 51.23 35.27 50.89 36.6L50.53 38.07C50.41 38.54 49.98 38.87 49.5 38.87C49.01 38.87 48.58 38.54 48.46 38.07L48.1 36.6C47.76 35.27 46.73 34.23 45.39 33.89L43.92 33.53C43.45 33.41 43.12 32.98 43.12 32.5C43.12 32.01 43.45 31.58 43.92 31.46L45.39 31.1C46.73 30.76 47.76 29.72 48.1 28.39L48.46 26.92C48.58 26.45 49.01 26.12 49.5 26.12ZM36.75 30.37C37.22 30.37 37.64 30.68 37.77 31.14L38.92 35.17C39.42 36.94 40.8 38.32 42.57 38.82L46.6 39.97C47.05 40.1 47.37 40.52 47.37 41C47.37 41.47 47.05 41.89 46.6 42.02L42.57 43.17C40.8 43.67 39.42 45.05 38.92 46.82L37.77 50.85C37.64 51.31 37.22 51.62 36.75 51.62C36.27 51.62 35.85 51.31 35.72 50.85L34.57 46.82C34.07 45.05 32.69 43.67 30.92 43.17L26.89 42.02C26.44 41.89 26.12 41.47 26.12 41C26.12 40.52 26.44 40.1 26.89 39.97L30.92 38.82C32.69 38.32 34.07 36.94 34.57 35.17L35.72 31.14C35.85 30.68 36.27 30.37 36.75 30.37ZM48.38 45.97C48.23 45.54 47.83 45.25 47.37 45.25C46.91 45.25 46.51 45.54 46.36 45.97L45.8 47.65C45.59 48.28 45.09 48.78 44.46 48.99L42.78 49.55C42.35 49.69 42.06 50.1 42.06 50.56C42.06 51.01 42.35 51.42 42.78 51.57L44.46 52.12C45.09 52.34 45.59 52.83 45.8 53.47L46.36 55.14C46.51 55.58 46.91 55.87 47.37 55.87C47.83 55.87 48.23 55.58 48.38 55.14L48.94 53.47C49.15 52.83 49.65 52.34 50.28 52.12L51.96 51.57C52.39 51.42 52.68 51.01 52.68 50.56C52.68 50.1 52.39 49.69 51.96 49.55L50.28 48.99C49.65 48.78 49.15 48.28 48.94 47.65L48.38 45.97Z" fill="#A685FA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.500000 10.500000)" stroke="url(#paint_linear_104_11618_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.500000 10.500000)" stroke="url(#paint_linear_104_11618_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" transform="translate(0.500000 0.500000)" stroke="url(#paint_linear_104_11617_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" transform="translate(0.500000 0.500000)" stroke="url(#paint_linear_104_11617_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>

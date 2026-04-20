@@ -1,9 +1,9 @@
 import { useState } from "react"
-import Slider from "../../slider/slider"
+import Slider from "../../generic/slider/slider"
 import type { FAQDataType } from "../../../data/FAQData"
-import SliderItem from "../../slider/slider-item/slider-item"
-import GreyBtn from "../../generic/GreyBtn"
-import s from "./FAQSlider.module.scss"
+import SliderItem from "../../generic/slider/slider-item/slider-item"
+import GreyBtn from "../../generic/grey-btn/grey-btn"
+import s from "./faq-slider.module.scss"
 
 type FAQSliderType = {
     data: FAQDataType[]

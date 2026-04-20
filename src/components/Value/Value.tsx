@@ -1,7 +1,7 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
 import { ValueData } from "../../data/ValueData";
-import ValueList from "./ValueList";
+import ValueList from "./value-list/value-list";
 
 
 export default function Value() {

@@ -1,7 +1,7 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
 import { ClientsData } from "../../data/ClientsData";
-import ClientsSlider from "./ClientsSlider";
+import ClientsSlider from "./clients-slider/clients-slider";
 
 
 

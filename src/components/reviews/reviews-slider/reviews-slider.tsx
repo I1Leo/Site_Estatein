@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Slider from "../../slider/slider";
+import Slider from "../../generic/slider/slider";
 import type{ ReviewsDataType } from "../../../data/ReviewsData";
-import SliderItem from "../../slider/slider-item/slider-item";
+import SliderItem from "../../generic/slider/slider-item/slider-item";
 import s from "./reviews-slider.module.scss"
-import IconCircle from "../../generic/IconCircle";
+import IconCircle from "../../generic/icon-circle/icon-circle";
+import ratingStar from "../../../img/Home/Reviews/rating-star.svg";
 
 type ReviewsSliderType = {
     data: ReviewsDataType[]
@@ -24,11 +25,11 @@ export default function ReviewsSlider({ data, btnText }: ReviewsSliderType) {
                 list.map((item) => (
                     <SliderItem key={item.name}>
                         <div className={s.stars_container}>
-                            <IconCircle src="./img/Home/Reviews/rating-star.svg" />
-                            <IconCircle src="./img/Home/Reviews/rating-star.svg" />
-                            <IconCircle src="./img/Home/Reviews/rating-star.svg" />
-                            <IconCircle src="./img/Home/Reviews/rating-star.svg" />
-                            <IconCircle src="./img/Home/Reviews/rating-star.svg" />
+                            <IconCircle src={ratingStar} />
+                            <IconCircle src={ratingStar}  />
+                            <IconCircle src={ratingStar}  />
+                            <IconCircle src={ratingStar} />
+                            <IconCircle src={ratingStar}  />
                         </div>
                         <h3 className={s.title}>{item.title}</h3>
                         <p className={s.text}>{item.text}</p>

@@ -1,5 +1,5 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
+import Section from "../generic/section/Section";
+import SectionHeader from "../generic/section-header/section-header";
 import { FAQData } from "../../data/FAQData";
 import FAQSlider from "./faq-slider/faq-slider";
 

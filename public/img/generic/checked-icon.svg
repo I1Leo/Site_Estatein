@@ -1,0 +1,13 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip303_5754">
+			<rect id="heroicons-solid/check" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip303_5754)">
+		<path id="Vector 616 (Stroke)" d="M19.91 4.62C20.26 4.85 20.35 5.32 20.12 5.66L11.12 19.16C10.99 19.35 10.79 19.47 10.57 19.49C10.35 19.51 10.12 19.43 9.96 19.28L3.96 13.28C3.67 12.98 3.67 12.51 3.96 12.21C4.26 11.92 4.73 11.92 5.03 12.21L10.38 17.57L18.87 4.83C19.1 4.48 19.57 4.39 19.91 4.62Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

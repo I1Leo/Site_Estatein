@@ -1,6 +1,6 @@
-import PropertiesFormSection from "../../components/PropertiesForm/PropertiesFormSection";
-import PropertiesRange from "../../components/PropertiesRange/PropertiesRange";
-import Search from "../../components/Search/Search";
+import PropertiesFormSection from "../../components/properties-form/properties-form-section/PropertiesFormSection";
+import PropertiesRange from "../../components/properties-range/properties-range";
+import Search from "../../components/search/search";
 import { SearchData } from "../../data/SearchData";
 
 export default function Properties() {

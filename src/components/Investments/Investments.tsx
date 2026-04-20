@@ -1,8 +1,8 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
 import { InvestmentsData } from "../../data/InvestmentsData";
-import InvestmentsGreyItem from "./InvestmentsGreyItem";
-import InvestmentsList from "./InvestmentsList";
+import InvestmentsGreyItem from "./investments-grey-item/investments-grey-item";
+import InvestmentsList from "./investments-list/investments-list";
 import s from "./Investments.module.scss"
 
 export default function Investments() {

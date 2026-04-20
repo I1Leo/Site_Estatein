@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import PurpleBtn from "../../generic/PurpleBtn";
+import PurpleBtn from "../../generic/purple-btn/purple-btn";
 import s from "./properties-slider.module.scss"
 import PropertiesFeature from "../properties-feature/properties-feature";
-import SliderItem from '../../slider/slider-item/slider-item';
-import Slider from '../../slider/slider';
+import SliderItem from '../../generic/slider/slider-item/slider-item';
+import Slider from '../../generic/slider/slider';
 import type { PropertiesDataType } from "../../../data/PropertiresData";
 
 type PropertiesSliderType = {

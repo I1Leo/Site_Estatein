@@ -1,6 +1,6 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
-import ConnectForm from "./ConnectForm/ConnectForm";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import ConnectForm from "./connect-form/connect-form";
 import { ConnectFormData } from "../../data/ConnectFormData";
 
 

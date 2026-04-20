@@ -1,8 +1,8 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
-import { ExperienceDataType } from "../../data/ExperienceData";
-import ExperienceItem from "./ExperienceItem";
-import s from "./Experience.module.scss"
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import type { ExperienceDataType } from "../../data/ExperienceData";
+import ExperienceItem from "./experience-item/experience-item";
+import s from "./experience.module.scss"
 
 type ExperienceType = {
     data: ExperienceDataType[]

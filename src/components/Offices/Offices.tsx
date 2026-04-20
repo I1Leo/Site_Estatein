@@ -1,6 +1,6 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
-import OfficesRange from "./OfficesRange";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import OfficesRange from "./offices-range/offices-range";
 import { OfficesRangeData } from "../../data/OfficesRangeData";
 
 

@@ -1,0 +1,33 @@
+<svg width="82.000000" height="82.000000" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip104_13308">
+			<rect id="Icon" width="34.000000" height="34.000000" transform="translate(23.500000 24.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_104_12838_0" x1="6.250008" y1="86.499977" x2="85.250023" y2="-5.499985" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_12838_1" x1="81.250000" y1="-10.500015" x2="6.250031" y2="82.000008" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_12839_0" x1="2.750000" y1="13.500000" x2="71.250000" y2="72.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.323723" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+		<linearGradient id="paint_linear_104_12839_1" x1="83.750000" y1="86.000015" x2="11.749989" y2="35.000031" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A685FA"/>
+			<stop offset="0.576615" stop-color="#A685FA" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip104_13308)">
+		<path id="Subtract" d="M55.37 33.56L55.37 33.78L41.61 42.25C40.92 42.67 40.07 42.67 39.38 42.25L25.62 33.78L25.62 33.56C25.62 31.21 27.52 29.31 29.87 29.31L51.12 29.31C53.47 29.31 55.37 31.21 55.37 33.56ZM25.62 48.43L25.62 36.28L38.27 44.06C39.63 44.9 41.36 44.9 42.72 44.06L55.37 36.28L55.37 48.43C55.37 50.78 53.47 52.68 51.12 52.68L29.87 52.68C27.52 52.68 25.62 50.78 25.62 48.43Z" fill="#A685FA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.000000 10.500000)" stroke="url(#paint_linear_104_12839_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Container" rx="30.500000" width="61.000000" height="61.000000" transform="translate(10.000000 10.500000)" stroke="url(#paint_linear_104_12839_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" transform="translate(0.000000 0.500000)" stroke="url(#paint_linear_104_12838_0)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="Icon Container" rx="40.500000" width="81.000000" height="81.000000" transform="translate(0.000000 0.500000)" stroke="url(#paint_linear_104_12838_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>

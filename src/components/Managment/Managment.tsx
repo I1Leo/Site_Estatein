@@ -1,7 +1,7 @@
-import Section from "../../generic/Section";
-import SectionHeader from "../../generic/SectionHeader";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
 import { ManagmentData } from "../../data/ManagmentData";
-import ManagmentList from "./ManagmentList";
+import ManagmentList from "./managment-list/managment-list";
 
 
 export default function Managment() {

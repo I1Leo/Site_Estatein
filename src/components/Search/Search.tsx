@@ -1,7 +1,7 @@
-import PurpleBtn from "../../generic/PurpleBtn";
-import { SearchDataType } from "../../data/SearchData";
+import PurpleBtn from "../generic/purple-btn/purple-btn";
+import type { SearchDataType } from "../../data/SearchData";
 import s from "./Search.module.scss"
-import SearchItem from "./SearchItem";
+import SearchItem from "./search-item/search-item";
 
 type SearchType = {
     data: SearchDataType[]

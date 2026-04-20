@@ -1,15 +1,19 @@
-import Logo from "../generic/Logo"
-import s from "./Footer.module.scss"
-import FooterCopyrigth from "./FooterCopyright"
-import { FooterData } from "./FooterData"
-import FooterList from "./FooterList"
+import Logo from "../generic/logo/logo";
+import s from "./footer.module.scss";
+import FooterCopyrigth from "./footer-copyright/footer-copyright";
+import { FooterData } from "../../data/FooterData";
+import FooterList from "./footer-list/footer-list";
+import logoDesktop from "../../img/Footer/Logo_desktop.svg";
+import logoLaptop from "../../img/Footer/Logo_laptop.svg";
+import logoMobile from "../../img/Footer/Logo_mobile.svg";
+import sendIcon from "../../img/Footer/send-icon.svg";
 
 
 export default function Footer() {
 
     let width = document.documentElement.clientWidth
 
-    const logoSrc = width > 1505 ? "./img/Footer/Logo_desktop.svg" : width < 1505 || width >= 391 ? "./img/Footer/Logo_laptop.svg" : "./img/Footer/Logo_mobile.svg";
+    const logoSrc = width > 1505 ? logoDesktop : width < 1505 || width >= 391 ? logoLaptop : logoMobile;
 
     return (
         <footer className={s.footer}>
@@ -24,7 +28,7 @@ export default function Footer() {
                                 <input type="text" name="" id="" placeholder="Enter Your Email" />
                             </div>
                             <button className={s.btn}>
-                                <img src="./img/Footer/send-icon.svg" alt="" />
+                                <img src={sendIcon} alt="" />
                             </button>
                         </form>
                     </div>

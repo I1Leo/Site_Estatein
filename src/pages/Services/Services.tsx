@@ -1,15 +1,15 @@
-import Features from "../../components/services-features/Features";
-import Investments from "../../components/Investments/Investments";
-import Managment from "../../components/Managment/Managment";
-import Promo from "../../components/services-hero/Promo";
-import Value from "../../components/Value/Value";
+import ServicesFeatures from "../../components/services-features/services-features";
+import Investments from "../../components/investments/investments";
+import Managment from "../../components/managment/managment";
+import ServicesHero from "../../components/services-hero/services-hero";
+import Value from "../../components/value/value";
 
 
 export default function Services() {
     return (
         <main>
-            <Promo />
-            <Features />
+            <ServicesHero />
+            <ServicesFeatures />
             <Value />
             <Managment />
             <Investments />

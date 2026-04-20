@@ -1,8 +1,8 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
-import { AchievementsDataType } from "./AchievementsData";
-import AchievementsItem from "./AchievementsItem";
-import s from "./Achievements.module.scss";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import type { AchievementsDataType } from "../../data/AchievementsData";
+import AchievementsItem from "./achievements-item/achievements-item";
+import s from "./achievements.module.scss";
 
 type AchievementsType = {
     data: AchievementsDataType[]

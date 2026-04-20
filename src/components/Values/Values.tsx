@@ -1,7 +1,7 @@
-import Section from "../generic/Section";
-import SectionHeader from "../generic/SectionHeader";
-import { ValuesDataType } from "../../data/ValuesData";
-import ValuesItem from "./ValuesItem";
+import Section from "../generic/section/section";
+import SectionHeader from "../generic/section-header/section-header";
+import type { ValuesDataType } from "../../data/ValuesData";
+import ValuesItem from "./values-item/values-item";
 import s from "./Values.module.scss"
 
 type ValuesProps = {
