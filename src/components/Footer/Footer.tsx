@@ -1,19 +1,18 @@
 import Logo from "../generic/logo/logo";
 import s from "./footer.module.scss";
 import FooterCopyrigth from "./footer-copyright/footer-copyright";
-import { FooterData } from "../../data/FooterData";
+import { FooterData } from "../../data/footer-data";
 import FooterList from "./footer-list/footer-list";
-import logoDesktop from "../../img/Footer/Logo_desktop.svg";
-import logoLaptop from "../../img/Footer/Logo_laptop.svg";
-import logoMobile from "../../img/Footer/Logo_mobile.svg";
-import sendIcon from "../../img/Footer/send-icon.svg";
-
+import logoDesktop from "../../img/footer/logo-desktop.svg";
+import logoLaptop from "../../img/footer/logo-laptop.svg";
+import logoMobile from "../../img/footer/logo-mobile.svg";
+import sendIcon from "../../img/footer/send-icon.svg";
+import { useWindowWidth } from "../../hooks";
 
 export default function Footer() {
+    const width = useWindowWidth();
 
-    let width = document.documentElement.clientWidth
-
-    const logoSrc = width > 1505 ? logoDesktop : width < 1505 || width >= 391 ? logoLaptop : logoMobile;
+    const logoSrc = width > 1505 ? logoDesktop : width >= 391 ? logoLaptop : logoMobile;
 
     return (
         <footer className={s.footer}>
@@ -37,5 +36,5 @@ export default function Footer() {
             </div>
             <FooterCopyrigth />
         </footer>
-    )
+    );
 }

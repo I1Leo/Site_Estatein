@@ -1,7 +1,7 @@
 import PropertiesFormSection from "../../components/properties-form/properties-form-section/PropertiesFormSection";
 import PropertiesRange from "../../components/properties-range/properties-range";
 import Search from "../../components/search/search";
-import { SearchData } from "../../data/SearchData";
+import { SearchData } from "../../data/search-data";
 
 export default function Properties() {
     return (
@@ -10,5 +10,5 @@ export default function Properties() {
             <PropertiesRange />
             <PropertiesFormSection />
         </main>
-    )
+    );
 }

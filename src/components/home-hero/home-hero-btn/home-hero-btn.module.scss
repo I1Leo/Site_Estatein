@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 .container {
    position: absolute;
@@ -39,7 +39,7 @@
 }
 
 .text_container {
-   animation: rotateText 15s linear infinite;
+   animation: rotate-text 15s linear infinite;
 
 
 }
@@ -57,7 +57,7 @@
 
 }
 
-@keyframes rotateText {
+@keyframes rotate-text {
    from {
       transform: rotate(0deg);
    }

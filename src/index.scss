@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 *,
 *::after,
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-   font-family: 'Urbanist';
+   font-family: Urbanist, sans-serif;
    background-color: $dark-grey;
    font-weight: 500;
    color: $white;

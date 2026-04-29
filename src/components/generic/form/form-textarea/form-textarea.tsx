@@ -1,14 +1,16 @@
-import s from "./form-textarea.module.scss"
+import type { TFormTextarea } from "../../../../types/generic/form-textarea";
+import s from "./form-textarea.module.scss";
 
-type FormTextareaType = {
-    id: string
-    placeholder: string
-    cols: number
-    rows: number
-}
-
-export default function FormTextarea ({id, placeholder, cols, rows} : FormTextareaType) {
+export default function FormTextarea({ id, placeholder, cols, rows }: TFormTextarea) {
     return (
-        <textarea name={id} id={id} cols={cols} rows={rows} placeholder={placeholder} style={{ resize: "none" }} className={s.textarea}></textarea>
-    )
+        <textarea
+            name={id}
+            id={id}
+            cols={cols}
+            rows={rows}
+            placeholder={placeholder}
+            style={{ resize: "none" }}
+            className={s.textarea}
+        ></textarea>
+    );
 }

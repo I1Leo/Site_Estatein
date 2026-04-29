@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 
 .item {
@@ -21,7 +21,7 @@
 .item_body {
     padding: 49px;
     border: 1px solid $grey;
-    border-radius: 0px 12px 12px 12px;
+    border-radius: 0 12px 12px;
     background: linear-gradient(156.17deg, $purple -49.397%, $dark-grey 13.589%);
     position: relative;
     flex-grow: 1;
@@ -41,7 +41,6 @@
     font-size: 1.444rem;
     font-weight: 600;
     line-height: 150%;
-
     padding-bottom: 0.769em;
 
     @media (max-width: 1505px) {

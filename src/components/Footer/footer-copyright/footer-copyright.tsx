@@ -1,8 +1,8 @@
 import FooterSocials from "../footer-socials/footer-socials.tsx";
-import { FooterSocialsData } from "../../../data/FooterSocialsData.ts";
-import s from "./footer-copyright.module.scss"
+import { FooterSocialsData } from "../../../data/footer-socials-data.ts";
+import s from "./footer-copyright.module.scss";
 
-export default function FooterCopyrigth () {
+export default function FooterCopyrigth() {
     return (
         <div className={s.container}>
             <div className={s.wrapper}>
@@ -10,8 +10,8 @@ export default function FooterCopyrigth () {
                     <span>@2026 Estatein. All Rights Reserved.</span>
                     <span>Terms & Condition</span>
                 </p>
-                <FooterSocials data={FooterSocialsData}/>
+                <FooterSocials data={FooterSocialsData} />
             </div>
         </div>
-    )
+    );
 }

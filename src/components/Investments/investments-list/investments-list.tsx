@@ -1,24 +1,18 @@
-import type { InvestmentsDataType } from "../../../data/InvestmentsData"
-import s from "./investments-list.module.scss"
+import type { TManagmentList } from "../../../types/services/investments-list";
+import s from "./investments-list.module.scss";
 
-type InvestmentsListType = {
-    data: InvestmentsDataType[]
-}
-
-export default function ManagmentList({ data }: InvestmentsListType) {
+export default function ManagmentList({ data }: TManagmentList) {
     return (
         <ul className={s.list}>
-            {
-                data.map(item => (
-                    <li key={item.title} className={s.item}>
-                        <div className={s.item_header}>
-                            <img src={item.icon} alt="" />
-                            <h3 className={s.title}>{item.title}</h3>
-                        </div>
-                        <p className={s.text}>{item.text}</p>
-                    </li>
-                ))
-            }
+            {data.map((item) => (
+                <li key={item.title} className={s.item}>
+                    <div className={s.item_header}>
+                        <img src={item.icon} alt="" />
+                        <h3 className={s.title}>{item.title}</h3>
+                    </div>
+                    <p className={s.text}>{item.text}</p>
+                </li>
+            ))}
         </ul>
-    )
+    );
 }

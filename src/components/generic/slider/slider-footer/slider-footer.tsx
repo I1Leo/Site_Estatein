@@ -1,59 +1,51 @@
+import type { TSliderFooter } from "../../../../types/generic/slider-footer";
 import GreyBtn from "../../grey-btn/grey-btn";
 import NextBtn from "../../next-btn/next-btn";
 import PrevBtn from "../../prev-btn/prev-btn";
-import s from "./slider-footer.module.scss"
+import s from "./slider-footer.module.scss";
+import { useWindowWidth } from "../../../../hooks";
 
-type SliderFooterProps = {
-   length: number
-   page: number
-   slides: number
-   btnText: string
-   onChange: (page: number) => void
-}
+export default function SliderFooter({ length, page, slides, btnText, onChange }: TSliderFooter) {
+    const width = useWindowWidth();
 
-export default function SliderFooter({ length, page, slides, btnText, onChange }: SliderFooterProps) {
+    return (
+        <footer className={!btnText && width <= 960 ? `${s.footer} ${s.titleless}` : s.footer}>
+            {width > 960 && (
+                <>
+                    <p>
+                        <span>{page + 1}</span> of <span>{Math.ceil(length / slides)}</span>
+                    </p>
+                    <div className={s.btns_container}>
+                        <PrevBtn page={page} onChange={onChange} />
+                        <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
+                    </div>
+                </>
+            )}
 
-   let width = document.documentElement.clientWidth
+            {width <= 960 && btnText && (
+                <>
+                    <GreyBtn text={btnText} />
+                    <div className={s.btns_container}>
+                        <PrevBtn page={page} onChange={onChange} />
+                        <p>
+                            <span>{page + 1}</span> of <span>{Math.ceil(length / slides)}</span>
+                        </p>
+                        <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
+                    </div>
+                </>
+            )}
 
-   return (
-      <footer className={!btnText && width <= 960 ? `${s.footer} ${s.titleless}`: s.footer}>
-
-         {
-            width > 960 &&
-            <>
-               <p><span>{page + 1}</span> of <span>{Math.round(length / slides)}</span></p>
-               <div className={s.btns_container}>
-                  <PrevBtn page={page} onChange={onChange} />
-                  <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
-               </div>
-            </>
-         }
-
-         {
-            (width <= 960 && btnText) &&
-            <>
-               <GreyBtn text={btnText} />
-               <div className={s.btns_container}>
-                  <PrevBtn page={page}  onChange={onChange} />
-                  <p><span>{page + 1}</span> of <span>{Math.round(length / slides)}</span></p>
-                  <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
-               </div>
-            </>
-         }
-
-         {
-            (width <= 960 && !btnText) &&
-            <>
-               <div className={s.btns_container}>
-                  <PrevBtn page={page} onChange={onChange} />
-                  <p><span>{page + 1}</span> of <span>{Math.round(length / slides)}</span></p>
-                  <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
-               </div>
-            </>
-         }
-
-
-
-      </footer>
-   )
+            {width <= 960 && !btnText && (
+                <>
+                    <div className={s.btns_container}>
+                        <PrevBtn page={page} onChange={onChange} />
+                        <p>
+                            <span>{page + 1}</span> of <span>{Math.ceil(length / slides)}</span>
+                        </p>
+                        <NextBtn length={length} page={page} slides={slides} onChange={onChange} />
+                    </div>
+                </>
+            )}
+        </footer>
+    );
 }

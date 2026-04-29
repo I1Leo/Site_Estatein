@@ -1,18 +1,14 @@
-import s from "./search-form-select-list.module.scss"
+import type { TSearchFormSelectList } from "../../../types/properties/search-form-select-list";
+import s from "./search-form-select-list.module.scss";
 
-type FormSelectListType = {
-    items: string[]
-    onChange: (choice: string) => void
-}
-
-export default function SearchFormSelectList ({items, onChange} : FormSelectListType) {
+export default function SearchFormSelectList({ items, onChange }: TSearchFormSelectList) {
     return (
         <ul className={s.list}>
-            {
-                items.map(item => (
-                    <li key={item} className={s.item} onClick={() =>onChange(item)}>{item}</li>
-                ))
-            }
+            {items.map((item) => (
+                <li key={item} className={s.item} onClick={() => onChange(item)}>
+                    {item}
+                </li>
+            ))}
         </ul>
-    )
+    );
 }

@@ -1,14 +1,10 @@
-import type { ReactNode } from "react"
-import s from "./section.module.scss"
+import type { TSection } from "../../../types/generic/section";
+import s from "./section.module.scss";
 
-type SectionType = {
-    children: ReactNode
-}
-
-export default function Section({children} : SectionType) {
+export default function Section({ children }: TSection) {
     return (
         <section className={s.section}>
             <div className={s.container}>{children}</div>
         </section>
-    )
+    );
 }

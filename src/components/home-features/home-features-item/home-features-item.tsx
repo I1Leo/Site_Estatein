@@ -1,17 +1,13 @@
-import s from "./home-features-item.module.scss"
+import type { THomeFeaturesItem } from "../../../types/home/home-features-item";
+import s from "./home-features-item.module.scss";
 
-type FeaturesItemProps = {
-   src: string
-   text: string
-}
-
-export default function HomeFeaturesItem({ src, text }: FeaturesItemProps) {
-   return (
-      <li className={s.container}>
-         <div className={s.img_container}>
-            <img src={src} alt="" />
-         </div>
-         <p className={s.text}>{text}</p>
-      </li>
-   )
+export default function HomeFeaturesItem({ src, text }: THomeFeaturesItem) {
+    return (
+        <li className={s.container}>
+            <div className={s.img_container}>
+                <img src={src} alt="" />
+            </div>
+            <p className={s.text}>{text}</p>
+        </li>
+    );
 }

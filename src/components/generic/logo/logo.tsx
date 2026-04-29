@@ -1,13 +1,10 @@
-import s from './logo.module.scss'
+import type { TLogo } from "../../../types/generic/logo";
+import s from "./logo.module.scss";
 
-type LogoProps = {
-   src: string
-}
-
-export default function Logo ({src} : LogoProps) {
-   return (
-      <div className={s.container}>
-         <img src={src}  alt="" />
-      </div>
-   )
+export default function Logo({ src }: TLogo) {
+    return (
+        <div className={s.container}>
+            <img src={src} alt="" />
+        </div>
+    );
 }

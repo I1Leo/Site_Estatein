@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 
 .item {
@@ -65,7 +65,6 @@
     background-color: $semi-grey;
     border: 1px solid $grey;
     border-radius: 100px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,17 +1,13 @@
-import s from "./contacts-features-item.module.scss"
+import type { TContactsFeaturesItem } from "../../../types/contacts/contacts-features-item";
+import s from "./contacts-features-item.module.scss";
 
-type FeaturesItemProps = {
-   src: string
-   text: string
-}
-
-export default function ContactsFeaturesItem({ src, text }: FeaturesItemProps) {
-   return (
-      <li className={s.container}>
-         <div className={s.img_container}>
-            <img src={src} alt="" />
-         </div>
-         <p className={s.text}>{text}</p>
-      </li>
-   )
+export default function ContactsFeaturesItem({ src, text }: TContactsFeaturesItem) {
+    return (
+        <li className={s.container}>
+            <div className={s.img_container}>
+                <img src={src} alt="" />
+            </div>
+            <p className={s.text}>{text}</p>
+        </li>
+    );
 }

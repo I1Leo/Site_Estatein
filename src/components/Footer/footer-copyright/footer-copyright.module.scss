@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 .container {
     padding: 20px;
@@ -30,7 +30,6 @@
 }   
 
 .text_container {
-    
     @media (max-width: 679px) {
         display: flex;
         flex-direction: column;

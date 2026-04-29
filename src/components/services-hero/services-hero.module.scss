@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 
 .container {
@@ -6,14 +6,14 @@
     background: linear-gradient(to left, $dark-grey 60%, $semi-grey );
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
-    padding: 150px 20px 160px 20px;
+    padding: 150px 20px 160px;
 
     @media (max-width: 1505px) {
-        padding: 100px 14px 130px 14px;
+        padding: 100px 14px 130px;
     }
 
     @media (max-width: 630px) {
-        padding: 50px 14px 50px 14px;
+        padding: 50px 14px;
         margin-bottom: 40px;
     }
 

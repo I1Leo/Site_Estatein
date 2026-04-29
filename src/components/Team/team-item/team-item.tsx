@@ -1,21 +1,16 @@
+import type { TTeamItem } from "../../../types/about-us/team-item";
 import s from "./team-item.module.scss";
-import twitterIcon from "../../../img/AboutUs/Team/twitter-icon.svg";
-import telegramIcon from "../../../img/AboutUs/Team/telegram-icon.svg";
+import twitterIcon from "../../../img/about-us/team/twitter-icon.svg";
+import telegramIcon from "../../../img/about-us/team/telegram-icon.svg";
 
-type TeamItemProps = {
-    name: string,
-    position: string,
-    img: string
-}
-
-export default function TeamItem ({name, position, img} : TeamItemProps) {
+export default function TeamItem({ name, position, img }: TTeamItem) {
     return (
         <li className={s.item}>
             <div className={s.img_container}>
                 <img src={img} alt="" />
             </div>
             <div className={s.social_container}>
-                <button >
+                <button>
                     <img src={twitterIcon} alt="" />
                 </button>
             </div>
@@ -28,5 +23,5 @@ export default function TeamItem ({name, position, img} : TeamItemProps) {
                 </button>
             </form>
         </li>
-    )
+    );
 }

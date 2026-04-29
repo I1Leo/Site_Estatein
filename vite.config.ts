@@ -1,22 +1,23 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import * as path from 'path';
+import * as path from "path";
 
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/styles/variables" as *;`
-      }
-    }
-  },
-  server: {
-    port: 5173
-  }
+    base: "/Site_Estatein/",
+    plugins: [react()],
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "src"),
+        },
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "@/styles/_variables" as *;`,
+            },
+        },
+    },
+    server: {
+        port: 5173,
+    },
 });

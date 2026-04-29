@@ -1,12 +1,10 @@
-import s from "./grey-btn.module.scss"
+import type { TGreyBtn } from "../../../types/generic/grey-btn";
+import s from "./grey-btn.module.scss";
 
-type GreyBtnProps = {
-   text: string
-   onChange?: (type : string) => void
-}
-
-export default function GreyBtn ({text, onChange} : GreyBtnProps) {
-   return (
-      <button className={s.btn} onClick={() => onChange && onChange(text)}>{text}</button>
-   )
+export default function GreyBtn({ text, onChange }: TGreyBtn) {
+    return (
+        <button className={s.btn} onClick={() => onChange && onChange(text)}>
+            {text}
+        </button>
+    );
 }

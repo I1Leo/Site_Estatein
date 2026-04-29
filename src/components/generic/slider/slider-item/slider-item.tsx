@@ -1,14 +1,6 @@
+import type { TSliderItem } from "../../../../types/generic/slider-item";
+import s from "./slider-item.module.scss";
 
-import s from "./slider-item.module.scss"
-
-type SliderItemProps = {
-   children: any
-}
-
-export default function SliderItem ({children} : SliderItemProps) {
-   return (
-      <li className={s.item}>
-         {children}
-      </li>
-   )
+export default function SliderItem({ children }: TSliderItem) {
+    return <li className={s.item}>{children}</li>;
 }

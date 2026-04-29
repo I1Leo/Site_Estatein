@@ -1,13 +1,13 @@
 import Section from "../generic/section/section";
 import SectionHeader from "../generic/section-header/section-header";
-import { InvestmentsData } from "../../data/InvestmentsData";
+import { InvestmentsData } from "../../data/investments-data";
 import InvestmentsGreyItem from "./investments-grey-item/investments-grey-item";
 import InvestmentsList from "./investments-list/investments-list";
-import s from "./Investments.module.scss"
+import s from "./Investments.module.scss";
 
 export default function Investments() {
-
-    const text = "Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions."
+    const text =
+        "Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions.";
 
     return (
         <Section>
@@ -19,5 +19,5 @@ export default function Investments() {
                 <InvestmentsList data={InvestmentsData} />
             </div>
         </Section>
-    )
+    );
 }

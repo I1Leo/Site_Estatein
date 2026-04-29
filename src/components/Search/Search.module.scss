@@ -1,18 +1,18 @@
-@use "@/styles/variables";
+
 
 .container {
     width: 100%;
     background: linear-gradient(to left, $dark-grey 60%, $semi-grey );
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
-    padding: 150px 20px 160px 20px;
+    padding: 150px 20px 160px;
 
     @media (max-width: 1505px) {
-        padding: 100px 14px 130px 14px;
+        padding: 100px 14px 130px;
     }
 
     @media (max-width: 630px) {
-        padding: 50px 14px 50px 14px;
+        padding: 50px 14px;
         margin-bottom: 40px;
     }
 
@@ -73,7 +73,7 @@
     border: 1px solid $grey;
     border-radius: 12px 12px 0 0;
     background-color: $dark-grey;
-    box-shadow: 0px 0px 0px 10px $semi-grey;
+    box-shadow: 0 0 0 10px $semi-grey;
 
     @media (max-width: 1505px) {
         max-width: 1100px;
@@ -87,7 +87,7 @@
 
     @media (max-width: 630px) {
         border-radius: 12px;
-        box-shadow: 0px 0px 0px 4px $semi-grey;
+        box-shadow: 0 0 0 4px $semi-grey;
         margin-bottom: 20px;
     }
 
@@ -123,7 +123,6 @@
     background-color: $semi-grey;
     padding: 10px;
     border-radius: 12px;
-
     display: grid;
     grid-template-columns: repeat(5, minmax(200px,299.2px));
     gap: 20px;

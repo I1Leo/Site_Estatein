@@ -1,4 +1,4 @@
-@use "@/styles/variables";
+
 
 .section {
    background-color: $dark-grey;
@@ -6,12 +6,12 @@
    padding-bottom: 75px;
 
    @media (max-width: 1505px) {
-      padding: 70px 14px 80px 14px;
+      padding: 70px 14px 80px;
 
    }
 
    @media (max-width: 960px) {
-      padding: 50px 14px 80px 14px;
+      padding: 50px 14px 80px;
 
    }
 
@@ -19,7 +19,6 @@
 
 .container {
    max-width: 1556px;
-   margin: 0 auto;
    width: 100%;
    margin: 0 auto;
 
@@ -44,7 +43,7 @@
 
    @media (max-width: 1505px) {
       flex-basis: 610px;
-      padding: 67.5px 0px 67.5px 0;
+      padding: 67.5px 0;
    }
 
    @media (max-width: 960px) {
