@@ -1,43 +1,41 @@
-import DarkBtn from "../generic/DarkBtn";
-import Logo from "../generic/Logo";
-import Nav from "./Nav";
-import s from "./Header.module.scss"
-import Burger from "./Burger";
+import type { THeader } from "../../types/generic/header";
+import DarkBtn from "../generic/dark-btn/dark-btn";
+import Logo from "../generic/logo/logo";
+import Nav from "./nav/nav";
+import s from "./header.module.scss";
+import Burger from "./burger/burger";
+import logoDesktop from "../../img/header/logo-desktop.svg";
+import logoLaptop from "../../img/header/logo-laptop.svg";
+import logoMobile from "../../img/header/logo-mobile.svg";
+import { useWindowWidth } from "../../hooks";
 
+export default function Header({ active, mobileProps, onChange }: THeader) {
+    const width = useWindowWidth();
 
-type HeaderProps = {
-   active: string,
-   mobileProps: [boolean, (newValue: boolean) => void]
-   onChange: (current: string) => void
-}
+    const logoSrc = width > 1505 ? logoDesktop : width >= 391 ? logoLaptop : logoMobile;
 
-export default function Header({ active, mobileProps, onChange }: HeaderProps) {
+    const [mobileNav, setMobileNav] = mobileProps;
 
-   let width = document.documentElement.clientWidth;
-
-   const logoSrc = width > 1505 ? "./img/Header/Logo_desktop.svg" : width < 1505 || width >= 391 ? "./img/Header/Logo_laptop.svg" : "./img/Header/Logo_mobile.svg";
-
-   const [mobileNav, setMobileNav] = mobileProps;
-
-   return (
-      <header className={s.header}>
-         <div className={s.wrapper}>
-            <Logo src={logoSrc} />
-            {
-               width > 960 &&
-               <>
-                  <Nav active={active} onChange={onChange} />
-                  <DarkBtn active={active} text="Contact Us" onChange={onChange} />
-               </>
-            }
-            {
-               width <= 960 && <Burger active={mobileNav} onChange={() => setMobileNav(!mobileNav)}/>
-            }
-
-         </div>
-         {mobileNav && 
-               <Nav  active={active} onChange={onChange}/>
-            }
-      </header>
-   )
+    return (
+        <header className={s.header}>
+            <div className={s.wrapper}>
+                <Logo src={logoSrc} />
+                {width > 960 && (
+                    <>
+                        <Nav active={active} onChange={onChange} />
+                        <DarkBtn
+                            active={active}
+                            text="Contact Us"
+                            link="/contacts"
+                            onChange={onChange}
+                        />
+                    </>
+                )}
+                {width <= 960 && (
+                    <Burger active={mobileNav} onChange={() => setMobileNav(!mobileNav)} />
+                )}
+            </div>
+            {mobileNav && <Nav active={active} onChange={onChange} />}
+        </header>
+    );
 }

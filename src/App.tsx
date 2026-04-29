@@ -1,42 +1,51 @@
-
-import { useState } from 'react'
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
-import Footer from './components/Footer/Footer'
-import AboutUs from './components/AboutUS/AboutUs'
-import PropertiesMore from './components/generic/PropertiesMore'
-import Properties from './components/Properties/Properties'
-import Services from './components/Services/Services'
-import Contacts from './components/Contacts/Contacts'
+import { useState } from "react";
+import Header from "./components/header/header";
+import Home from "./pages/home/home";
+import Footer from "./components/footer/footer";
+import AboutUs from "./pages/about-us/about-us";
+import PropertiesMore from "./components/generic/properties-more/properties-more";
+import Properties from "./pages/properties/properties";
+import Services from "./pages/services/services";
+import Contacts from "./pages/contacts/contacts";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "./hooks";
+import { setPage } from "./services/app";
 
 function App() {
+    const [mobileNav, setMobileNav] = useState(false);
 
-  const [page, setPage] = useState("Home")
+    const location = useLocation();
+    const navigate = useNavigate();
+    const page = useAppSelector((state) => state.root.AppSlice.currentPage);
+    const dispatch = useAppDispatch();
 
-  const [mobileNav, setMobileNav] = useState(false);
+    function headerHandler(page: string, link: string) {
+        dispatch(setPage(page));
+        navigate(link);
 
-
-  function headerHandler (page : string) {
-    setPage(page);
-    
-    if (document.documentElement.clientWidth <= 960) {
-      setMobileNav(!mobileNav)
+        if (document.documentElement.clientWidth <= 960) {
+            setMobileNav(false);
+        }
     }
 
-  }
-
-  return (
-    <>
-      <Header active={page} onChange={headerHandler} mobileProps = {[mobileNav, setMobileNav]}/>
-      {page === "Home" && <Home />}
-      {page === "About Us" && <AboutUs />}
-      {page === "Properties" && <Properties />}
-      {page === "Services" && <Services />}
-      {page === "Contact Us" && <Contacts />}
-      <PropertiesMore />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header
+                active={page}
+                onChange={headerHandler}
+                mobileProps={[mobileNav, setMobileNav]}
+            />
+            <Routes location={location}>
+                <Route path="/" element={<Home />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/properties" element={<Properties />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/contacts" element={<Contacts />} />
+            </Routes>
+            <PropertiesMore />
+            <Footer />
+        </>
+    );
 }
 
-export default App
+export default App;
